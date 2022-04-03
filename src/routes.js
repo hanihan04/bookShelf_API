@@ -16,6 +16,11 @@ const routes = [
     method: 'GET',
     path: '/books',
     handler: getAllBooksHandler,
+    options: {
+      cors: {
+        origin: ['*'],
+      },
+    },
   },
   {
     method: 'GET',
